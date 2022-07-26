@@ -12,12 +12,12 @@ const Products = () => {
     }, [])
 
     return (
-        <div className='bg-base-100 p-5'>
-            <div className='lg:flex'>
-                <h2 className='font-semibold text-left'>Trending Products</h2>
+        <div className='bg-base-100 p-5 rounded-lg'>
+            <div className=''>
+                <h2 className='font-semibold text-left text-lg'>Trending Products</h2>
                 <hr className='my-3 text-red-600' />
 
-                <ul className='flex gap-3 my-3 lg:flex-end'>
+                <ul className='justify-end  font-semibold  flex gap-3 my-3 mb-3 text-gray-700'>
                     <li>Fashion</li>
                     <li>Cosmatic</li>
                     <li>Electronic</li>

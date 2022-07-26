@@ -1,15 +1,29 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from "react-router-dom";
+import auth from '../../firebase.init';
+import { useSelector } from 'react-redux';
+
 
 
 const Navbar = () => {
+    const [user] = useAuthState(auth)
+    const items = useSelector((state) => state.product)
+
+
+    const logout = () => {
+        signOut(auth)
+        localStorage.removeItem('accessToken');
+    }
 
 
 
     const menuItem = <>
-        <li><Link className='rounded-lg text-lg' to='/'>Home</Link></li>
-        <li><Link className='rounded-lg text-lg' to='/about'>About</Link></li>
-        <li><Link className='rounded-lg text-lg' to='/blog'>Blogs</Link></li>
+        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/'>Home</Link></li>
+        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/about'>About</Link></li>
+        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/blog'>Blogs</Link></li>
+        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/cart'>Cart items : {items.length}</Link></li>
 
 
 
@@ -17,13 +31,19 @@ const Navbar = () => {
             {/* <a to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</a> */}
         </li>
 
-
-
-
-
+        <li>{user ? <>
+            {/* <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link> */}
+            <button onClick={logout} className='btn btn-ghost text-xl hover:text-secondary' >Sign out</button>
+        </>
+            : <Link className='text-xl hover:text-secondary' to='login '>Login</Link>}
+        </li>
     </>
+
+
+
+
     return (
-        <div className="navbar  z-10 bg-primary shadow-xl">
+        <div className="navbar  z-10 bg-primary shadow-xl ">
 
             <div className="navbar-start">
                 <div className="dropdown">
@@ -43,11 +63,11 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            {/* <div className="lg:navbar-center lg:hidden navbar-end">
+            <div className="lg:navbar-center lg:hidden navbar-end">
                 <label tabIndex="1" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-            </div> */}
+            </div>
 
         </div>
     );

@@ -1,8 +1,7 @@
 import React from 'react';
 import GropueProduct from './GropueProduct';
 
-const GroupProducts = () => {
-
+const Electric = () => {
     const products = [
         {
             "id": "1",
@@ -25,11 +24,10 @@ const GroupProducts = () => {
             "name": "Walton TV"
         },
     ]
-
     return (
         <div className='bg-base-100 p-5 rounded-lg'>
-            <h2 className='text-xl my-2'>Men & Women's Fashion</h2>
-            <div className='grid grid-cols-2  w-[300px]'> {
+            <h2 className='text-xl my-2'>Electronic Accessoris</h2>
+            <div className='grid grid-cols-2'> {
                 products.map(product => <GropueProduct
                     product={product}
                     key={product.id}
@@ -40,4 +38,4 @@ const GroupProducts = () => {
     );
 };
 
-export default GroupProducts;
+export default Electric;

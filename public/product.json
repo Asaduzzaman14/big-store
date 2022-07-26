@@ -1,31 +1,31 @@
 [
     {
         "_id": "1",
-        "name": "watch",
+        "name": "T-shire",
         "price": "89",
         "img": "https://i.ibb.co/VtdpKtH/product-1.jpg"
     },
     {
         "_id": "2",
-        "name": "watch",
+        "name": "black Showes",
         "price": "89",
         "img": "https://i.ibb.co/wC48Mjj/product-2.jpg"
     },
     {
         "_id": "3",
-        "name": "watch",
+        "name": "Black t-shirt",
         "price": "89",
         "img": "https://i.ibb.co/gr5npWG/product-6.jpg "
     },
     {
         "_id": "4",
-        "name": "watch",
+        "name": "trowser & shows",
         "price": "89",
         "img": "https://i.ibb.co/zS7fHQV/product-12.jpg"
     },
     {
         "_id": "5",
-        "name": "watch",
+        "name": "Black watch",
         "price": "89",
         "img": "https://i.ibb.co/hVzYZmQ/product-9.jpg "
     },
@@ -37,7 +37,7 @@
     },
     {
         "_id": "7",
-        "name": "watch",
+        "name": "shocks",
         "price": "89",
         "img": "https://i.ibb.co/vd4m1Cp/product-7.jpg"
     }

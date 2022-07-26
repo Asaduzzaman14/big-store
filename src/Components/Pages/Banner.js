@@ -4,7 +4,7 @@ import bannerimg from "../Assates/sample-1 (1).jpg"
 
 const Banner = () => {
     return (
-        <div className='w-100'>
+        <div className='min-w-full'>
             <img className='mx-auto w-100' src={bannerimg} alt="" />
         </div>
     );
