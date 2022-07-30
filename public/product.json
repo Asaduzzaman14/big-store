@@ -2,43 +2,57 @@
     {
         "_id": "1",
         "name": "T-shire",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "39",
         "img": "https://i.ibb.co/VtdpKtH/product-1.jpg"
     },
     {
         "_id": "2",
         "name": "black Showes",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "64",
         "img": "https://i.ibb.co/wC48Mjj/product-2.jpg"
     },
     {
         "_id": "3",
         "name": "Black t-shirt",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "93",
         "img": "https://i.ibb.co/gr5npWG/product-6.jpg "
     },
     {
         "_id": "4",
         "name": "trowser & shows",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "54",
         "img": "https://i.ibb.co/zS7fHQV/product-12.jpg"
     },
     {
         "_id": "5",
         "name": "Black watch",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "74",
         "img": "https://i.ibb.co/hVzYZmQ/product-9.jpg "
     },
     {
         "_id": "6",
         "name": "watch",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "58",
         "img": "https://i.ibb.co/FmLfq7D/product-8.jpg"
     },
     {
         "_id": "7",
         "name": "shocks",
-        "price": "89",
+        "condition": "New product",
+        "InStock": "9",
+        "price": "91",
         "img": "https://i.ibb.co/vd4m1Cp/product-7.jpg"
     }
 ]

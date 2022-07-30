@@ -2,25 +2,21 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = []
 
-
-
-
-const productSlice = createSlice({
+const cardSlice = createSlice({
     name: " card",
     initialState,
     reducers: {
         add(state, action) {
             state.push(action.payload)
-
-
         },
+
         remove(state, action) {
-            state = state.filter((item) => item.id !== action.payload)
+            return state.filter((item) => item._id !== action.payload)
         }
     }
 })
 
 
-export const { add, remove } = productSlice.actions
+export const { add, remove } = cardSlice.actions
 
-export default productSlice.reducer
+export default cardSlice.reducer

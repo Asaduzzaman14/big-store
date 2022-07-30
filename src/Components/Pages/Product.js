@@ -1,6 +1,7 @@
 import React from 'react';
-import { add } from '../../store/productSlice';
+import { add } from '../../store/cardSlice';
 import { useDispatch } from 'react-redux/es/exports';
+import { Link } from 'react-router-dom';
 
 
 const Product = ({ product }) => {
@@ -13,7 +14,6 @@ const Product = ({ product }) => {
         dispatch(add(product))
 
 
-
     }
 
 
@@ -24,7 +24,8 @@ const Product = ({ product }) => {
                 <h2 className='text-xl font-semibold'>{name}</h2>
                 <div className='flex justify-between'>
                     <h3 className='text-xl font-semibold'>${price}</h3>
-                    <button onClick={() => handleAdd(product)} className='btn-small bg-gray-400 h-7 px-5 text-white hover:bg-gray-500'>Buy </button>
+                    <button onClick={() => handleAdd(product)} className='btn-small bg-gray-400 h-7 px-5 text-white hover:bg-gray-500'>Add To cart </button>
+                    {/* <Link to="/Product/id" className='btn-small bg-gray-400 h-7 px-5 text-white hover:bg-gray-500'>Add to cart </Link> */}
                 </div>
 
             </div>

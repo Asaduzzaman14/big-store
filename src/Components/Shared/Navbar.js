@@ -27,16 +27,14 @@ const Navbar = () => {
 
 
 
-        <li>
-            {/* <a to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</a> */}
-        </li>
 
-        <li>{user ? <>
-            {/* <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link> */}
+
+        <>{user ? <>
             <button onClick={logout} className='btn btn-ghost text-xl hover:text-secondary' >Sign out</button>
         </>
             : <Link className='text-xl hover:text-secondary' to='login '>Login</Link>}
-        </li>
+        </>
+        {/* <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link> */}
     </>
 
 

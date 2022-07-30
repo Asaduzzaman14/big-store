@@ -28,8 +28,8 @@ const GroupProducts = () => {
 
     return (
         <div className='bg-base-100 p-5 rounded-lg'>
-            <h2 className='text-xl my-2'>Men & Women's Fashion</h2>
-            <div className='grid grid-cols-2  w-[300px]'> {
+            <h2 className='text-xl my-2'>Electronic Accessoris</h2>
+            <div className='grid grid-cols-2'> {
                 products.map(product => <GropueProduct
                     product={product}
                     key={product.id}
