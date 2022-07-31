@@ -1,4 +1,3 @@
-import { async } from "@firebase/util"
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
 export const STATUSES = Object.freeze({

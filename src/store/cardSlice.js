@@ -12,11 +12,24 @@ const cardSlice = createSlice({
 
         remove(state, action) {
             return state.filter((item) => item._id !== action.payload)
+
+        },
+        update(state, action) {
+            const { id, title } = action.payload;
+            const isExist = state.data.filter(item => item.id === id);
+            // console.log(isExist);
+            // if (isExist) {
+            //     isExist[0].title = title
+
+            // }
         }
+
+
+
     }
 })
 
 
-export const { add, remove } = cardSlice.actions
+export const { add, remove, update } = cardSlice.actions
 
 export default cardSlice.reducer

@@ -11,6 +11,9 @@ import store from "./store/store";
 import BuyProduct from "./Components/Pages/BuyProduct";
 import Dashbord from "./Components/Dashbord/Dashbord";
 import AddProduct from "./Components/Dashbord/AddProduct";
+import AllOrder from "./Components/Dashbord/AllOrder";
+import AllUsers from "./Components/Dashbord/AllUsers";
+import AllReview from "./Components/Dashbord/AllReview";
 
 function App() {
   return (
@@ -25,8 +28,12 @@ function App() {
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/Product/:id" element={<BuyProduct />}></Route>
 
-          <Route path="/dashbord" element={<Dashbord />}>
-            <Route path="/dashbord/allOrder" element={<AddProduct />}></Route>
+          <Route path="/dashborad" element={<Dashbord />}>
+            <Route index element={<AddProduct />}></Route>
+            <Route path="addproduct" element={<AddProduct />}></Route>
+            <Route path="allOrders" element={<AllOrder />}></Route>
+            <Route path="allUsers" element={<AllUsers />}></Route>
+            <Route path="allreviews" element={<AllReview />}></Route>
 
 
 

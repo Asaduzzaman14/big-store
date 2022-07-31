@@ -34,7 +34,7 @@ const Navbar = () => {
         </>
             : <Link className='text-xl hover:text-secondary' to='login '>Login</Link>}
         </>
-        {/* <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link> */}
+        <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link>
     </>
 
 
