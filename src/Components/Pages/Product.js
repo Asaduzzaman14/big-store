@@ -1,42 +1,49 @@
-import React from 'react';
-import { add } from '../../store/cardSlice';
-import { useDispatch } from 'react-redux/es/exports';
-import { Link } from 'react-router-dom';
-import { BsCartCheckFill } from 'react-icons/bs';
-import { HiOutlineHeart } from 'react-icons/hi';
-
+import React from "react";
+import { add } from "../../store/cardSlice";
+import { useDispatch } from "react-redux/es/exports";
+import { Link } from "react-router-dom";
+import { BsCartCheckFill } from "react-icons/bs";
+import { HiOutlineHeart } from "react-icons/hi";
 
 const Product = ({ product }) => {
-    const { name, id, img, price } = product
-    const dispatch = useDispatch()
+  const { name, id, img, price } = product;
+  const dispatch = useDispatch();
 
+  const handleAddToCart = (product) => {
+    dispatch(add(product));
+  };
 
+  return (
+    <div className='rounded-md border w-[180px] flex-row gap-2'>
+      <Link to='Product/id'>
+        <figure className='w-[180px] h-[210px] rounded-sm'>
+          <img src={img} alt='Movie' />
+        </figure>
 
-    const handleAddToCart = (product) => {
-        dispatch(add(product))
+        <div className='mt-8'>
+          <p className='text-lg font-noraml text-gray-800 hover:text-secondary '>
+            {name}
+          </p>
+          <p className='text-textColor font-medium  '>Lem ipsum dolor</p>
 
+          <p className='text-textColor font-medium  '>${price}</p>
+          {/* icons */}
+          <div className='flex'>
+            <button
+              className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm'
+              onClick={() => handleAddToCart(product)}
+            >
+              <BsCartCheckFill />
+            </button>
 
-    }
-
-
-    return (
-        <div className="rounded-md mb-7 w-52 ">
-            <Link to="Product/id">
-                <figure className='w-full'><img src={img} alt="Movie" /></figure>
-            </Link>
-
-            <div className='  gap-4 m-1'>
-                <h2 className='text-lg font-noraml text-gray-800 hover:text-secondary '>{name}</h2>
-
-                <div className='flex justify-between'>
-                    <h3 className='text-lg text-500 '>${price}</h3>
-                    <button className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm' onClick={() => handleAddToCart(product)} ><BsCartCheckFill /></button>
-                    <h3 className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm'><HiOutlineHeart /></h3>
-                </div>
-
-            </div>
+            <span className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+              <HiOutlineHeart />
+            </span>
+          </div>
         </div>
-    );
+      </Link>
+    </div>
+  );
 };
 
 export default Product;
