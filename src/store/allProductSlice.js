@@ -38,7 +38,6 @@ const productsSlice = createSlice({
     }
 
 
-
 })
 
 
@@ -49,24 +48,24 @@ export default productsSlice.reducer
 
 //  Thunks
 
-export const fetchProduct = createAsyncThunk('product/fetch', async () => {
-    const res = await fetch("product.json")
+export const fetchProduct = createAsyncThunk('product/fetch', async (filterdata) => {
+    const res = await fetch("allproduct.json")
     const data = await res.json()
     return data;
 })
 
-//  post data 
-export const addProduct = createAsyncThunk('product/post', async (product) => {
+//  post data
+// export const addProduct = createAsyncThunk('product/post', async (product) => {
 
-    try {
-        const response = await axios.post('http://localhost:5000/product', product)
-        return response.data;
+//     try {
+//         const response = await axios.post('http://localhost:5000/product', product)
+//         return response.data;
 
-    } catch (err) {
-        console.log(err);
-    }
+//     } catch (err) {
+//         console.log(err);
+//     }
 
-})
+// })
 
 
 

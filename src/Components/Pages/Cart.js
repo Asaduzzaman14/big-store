@@ -5,14 +5,21 @@ import { remove } from "../../store/cardSlice"
 
 const Cart = () => {
     const items = useSelector((state) => state.product)
+    console.log(items);
     const dispatch = useDispatch()
 
     const handelRemove = (id) => {
-        // console.log(id);
         dispatch(remove(id))
 
     }
+    let price = 0;
 
+    for (const item of items) {
+        console.log(item.price);
+        price += parseInt(item.price)
+    }
+
+    console.log(price);
 
 
 
@@ -34,8 +41,8 @@ const Cart = () => {
 
                 <div className='bg-gray-50 p-5 text-xl  w-[450px]'>
                     <h3>Item: {items.length}</h3>
-                    <h3>Shoping: </h3>
-                    <h3>text: </h3>
+                    <h3>Shoping: ${price} </h3>
+                    <h3>text: $ 20</h3>
                     <hr className='mb-0' />
                     <h3>Total: </h3>
                     <div className='bg-gray-200 p-3 my-5'>

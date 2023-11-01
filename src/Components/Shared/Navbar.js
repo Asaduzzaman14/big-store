@@ -23,22 +23,16 @@ const Navbar = () => {
         <li><Link className='rounded-lg text-lg hover:text-secondary' to='/'>Home</Link></li>
         <li><Link className='rounded-lg text-lg hover:text-secondary' to='/about'>About</Link></li>
         <li><Link className='rounded-lg text-lg hover:text-secondary' to='/blog'>Blogs</Link></li>
-        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/cart'>Cart items : {items.length}</Link></li>
-
-
-
-
+        <li><Link className='rounded-lg text-lg hover:text-secondary' to='/cart'>Cart: {items.length}</Link></li>
 
         <>{user ? <>
-            <button onClick={logout} className='btn btn-ghost text-xl hover:text-secondary' >Sign out</button>
+            <li onClick={logout} className=' text-xl hover:text-secondary' >Sign out</li>
         </>
-            : <Link className='text-xl hover:text-secondary' to='login '>Login</Link>}
+            : <li><Link className='text-xl hover:text-secondary' to='login '>Login</Link></li>}
         </>
-        <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link>
-    </>
-
-
-
+        <li>
+            <Link to='/dashborad' className='btn btn-ghost text-xl'>Dashborad</Link>
+        </li>    </>
 
     return (
         <div className="navbar  z-10 bg-primary shadow-xl ">

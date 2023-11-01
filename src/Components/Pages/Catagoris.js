@@ -6,7 +6,7 @@ const Catagoris = () => {
 
 
     return (
-        <div className=' gap-4 my-7 justify-center grid md:grid-cols-3 lg:grid-cols-3'>
+        <div className=' gap-4 my-7  justify-center grid md:grid-cols-3 lg:grid-cols-3'>
             <GroupProducts></GroupProducts>
             <Electric></Electric>
             <Electric></Electric>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GropueProduct from './GropueProduct';
 
 const GroupProducts = () => {
@@ -36,6 +37,7 @@ const GroupProducts = () => {
                 ></GropueProduct>)
             }
             </div>
+            <Link to={'/allcatagory'} className="text-xs hover:text-secondary hover:underline text-right">View More </Link>
         </div>
     );
 };

@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "1",
+        "img": "https://i.ibb.co/cD3tzh0/laptop.jpg ",
+        "name": "Mobile",
+        "price": "21",
+        "type": "electronics"
+    },
+    {
+        "_id": "2",
+        "img": "https://i.ibb.co/55VRH2G/led-monitor.jpg",
+        "name": "Mobile",
+        "price": "14",
+        "type": "electronics"
+    },
+    {
+        "_id": "3",
+        "img": "https://i.ibb.co/M5pBMWc/speaker.jpg ",
+        "name": "Walton Tv",
+        "price": "77",
+        "type": "jewellery"
+    },
+    {
+        "_id": "4",
+        "img": "https://i.ibb.co/M5pBMWc/speaker.jpg ",
+        "name": "Walton TV",
+        "price": "20",
+        "type": "jewellery"
+    },
+    {
+        "_id": "5",
+        "img": "https://i.ibb.co/cD3tzh0/laptop.jpg ",
+        "name": "Mobile",
+        "price": "50",
+        "type": "electronics"
+    },
+    {
+        "_id": "6",
+        "img": "https://i.ibb.co/55VRH2G/led-monitor.jpg",
+        "name": "Mobile",
+        "price": "23",
+        "type": "electronics"
+    },
+    {
+        "_id": "7",
+        "img": "https://i.ibb.co/M5pBMWc/speaker.jpg ",
+        "name": "Walton TV",
+        "price": "24",
+        "type": "fashion"
+    },
+    {
+        "_id": "8",
+        "img": "https://i.ibb.co/M5pBMWc/speaker.jpg ",
+        "name": "Walton TV",
+        "price": "34",
+        "type": "cosmatis"
+    },
+    {
+        "_id": "9",
+        "img": "https://i.ibb.co/cD3tzh0/laptop.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem error dolor consequatur voluptatibus excepturi similique alias placeat ducimus, nostrum dolorum!",
+        "name": "mark jofferson",
+        "price": "20",
+        "type": "cosmatis"
+    },
+    {
+        "_id": "10",
+        "img": "https://i.ibb.co/hVzYZmQ/product-9.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem error dolor consequatur voluptatibus excepturi similique alias placeat ducimus, nostrum dolorum!",
+        "name": "mark jofferson",
+        "price": "20",
+        "type": "cosmatis"
+    },
+    {
+        "_id": "11",
+        "img": "https://i.ibb.co/cD3tzh0/laptop.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem error dolor consequatur voluptatibus excepturi similique alias placeat ducimus, nostrum dolorum!",
+        "name": "mark jofferson",
+        "price": "20",
+        "type": "fashion"
+    }
+]

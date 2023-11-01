@@ -14,6 +14,7 @@ import AddProduct from "./Components/Dashbord/AddProduct";
 import AllOrder from "./Components/Dashbord/AllOrder";
 import AllUsers from "./Components/Dashbord/AllUsers";
 import AllReview from "./Components/Dashbord/AllReview";
+import AllCatagory from "./Components/Pages/AllCatagory";
 
 function App() {
   return (
@@ -23,9 +24,14 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/allcatagory" element={<AllCatagory />}></Route>
+
+
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<Blogs />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
+
+
           <Route path="/Product/:id" element={<BuyProduct />}></Route>
 
           <Route path="/dashborad" element={<Dashbord />}>

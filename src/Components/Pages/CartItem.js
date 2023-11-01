@@ -20,7 +20,7 @@ const CartItem = ({ item, handelRemove }) => {
 
                 <div className='flex gap-2'>
                     <button className='btn-xs bg-gray-400'>-</button>
-                    <span className='border p-2'>1</span>
+                    <input className='border p-2 w-14 h-7 -mx-2 ' type={"Number"}></input>
                     <button className='btn-xs bg-gray-400'>+</button>
 
                     <span onClick={() => handelRemove(_id)} className='text-3xl text-red-500'> <MdDelete /> </span>
