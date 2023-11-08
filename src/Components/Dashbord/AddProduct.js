@@ -19,7 +19,7 @@ const AddProduct = () => {
               type='text'
               disabled
               value=''
-              className='input input-bordered input-secondary w-full max-w-xs'
+              className='input  input-bordered input-secondary w-full max-w-xs'
             />
             <input
               type='text'
@@ -32,25 +32,25 @@ const AddProduct = () => {
               type='text'
               name='name'
               value=''
-              className='input input-bordered input-secondary w-full max-w-xs'
+              className='input focus:outline-none focus:border-2 input-bordered input-secondary w-full max-w-xs'
             />
             <input
               type='email'
               name='email'
               value=''
-              className='input input-bordered input-secondary w-full max-w-xs'
+              className='input  focus:outline-none focus:border-2 input-bordered input-secondary w-full max-w-xs'
             />
             <input
               type='number'
               name='phone'
               placeholder='Phone'
-              className='input input-bordered input-secondary w-full max-w-xs'
+              className='input  focus:outline-none focus:border-2 input-bordered input-secondary w-full max-w-xs'
             />
 
             <input
               type='submit'
               value={"Submit"}
-              className='bg-secondary btn text-white input input-bordered input-secondary w-full max-w-xs'
+              className='bg-secondary  focus:outline-none  hover:border-secondary hover:border-2  btn text-white input input-bordered input-secondary w-full max-w-xs'
             />
           </form>
         </div>

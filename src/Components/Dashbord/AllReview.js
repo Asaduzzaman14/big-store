@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const AllReview = () => {
-    return (
-        <div>
-            <h2 className='text-2xl text-red-600'>All Review here</h2>
-        </div>
-    );
+  return (
+    <div>
+      <h3 className='font-bold text-2xl text-center text-secondary'>
+        All Review
+      </h3>
+    </div>
+  );
 };
 
 export default AllReview;
