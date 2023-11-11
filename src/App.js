@@ -16,6 +16,7 @@ import AllUsers from "./Components/Dashbord/AllUsers";
 import AllReview from "./Components/Dashbord/AllReview";
 import AllCatagory from "./Components/Pages/AllCatagory";
 import AllProducts from "./Components/Dashbord/AllProducts";
+import AdminPanel from "./Components/Dashbord/AdminPanel";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
           <Route path='/Product/:id' element={<BuyProduct />}></Route>
 
           <Route path='/dashborad' element={<Dashbord />}>
-            <Route index element={<AddProduct />}></Route>
+            <Route index element={<AdminPanel />}></Route>
             <Route path='addproduct' element={<AddProduct />}></Route>
             <Route path='allOrders' element={<AllOrder />}></Route>
             <Route path='allUsers' element={<AllUsers />}></Route>
