@@ -10,27 +10,23 @@ const AdminPanel = () => {
         Dashboard
       </h3>
       <div>
-        
-      <Link to={"/"}>
-        <div className='bg-primary cursor-pointer hover:bg-opacity-95 text-white gap-2 px-5 border border-gray-700 rounded-md text-center flex items-center flex-col p-3 w-fit'>
-          <div>
-            <FaProductHunt className='text-3xl' />
+        /
+        <Link to={"/"}>
+          <div className='bg-primary cursor-pointer hover:bg-opacity-95 text-white gap-2 px-5 border border-gray-700 rounded-md text-center flex items-center flex-col p-3 w-fit'>
+            <div>
+              <FaProductHunt className='text-3xl' />
+            </div>
+            <h2 className='font-semibold text-xl'>PRODUCTS</h2>
           </div>
-          <h2 className='font-semibold text-xl'>PRODUCTS</h2>
-        </div>
-      </Link>
-
-      <Link to={"/"}>
-        <div className='bg-primary cursor-pointer hover:bg-opacity-95 text-white gap-2 px-5 border border-gray-700 rounded-md text-center flex items-center flex-col p-3 w-fit'>
-          <div>
-            <FaProductHunt className='text-3xl' />
+        </Link>
+        <Link to={"/"}>
+          <div className='bg-primary cursor-pointer hover:bg-opacity-95 text-white gap-2 px-5 border border-gray-700 rounded-md text-center flex items-center flex-col p-3 w-fit'>
+            <div>
+              <FaProductHunt className='text-3xl' />
+            </div>
+            <h2 className='font-semibold text-xl'>ORDERS</h2>
           </div>
-          <h2 className='font-semibold text-xl'>ORDERS</h2>
-        </div>
-      </Link>
-
-      
-      
+        </Link>
       </div>
     </div>
   );
