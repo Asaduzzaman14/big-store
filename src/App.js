@@ -15,43 +15,35 @@ import AllOrder from "./Components/Dashbord/AllOrder";
 import AllUsers from "./Components/Dashbord/AllUsers";
 import AllReview from "./Components/Dashbord/AllReview";
 import AllCatagory from "./Components/Pages/AllCatagory";
+import AllProducts from "./Components/Dashbord/AllProducts";
 
 function App() {
   return (
     <Provider store={store}>
       <div>
-
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/allcatagory" element={<AllCatagory />}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/allcatagory' element={<AllCatagory />}></Route>
 
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/blog' element={<Blogs />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
 
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/blog" element={<Blogs />}></Route>
-          <Route path="/cart" element={<Cart />}></Route>
+          <Route path='/Product/:id' element={<BuyProduct />}></Route>
 
-
-          <Route path="/Product/:id" element={<BuyProduct />}></Route>
-
-          <Route path="/dashborad" element={<Dashbord />}>
+          <Route path='/dashborad' element={<Dashbord />}>
             <Route index element={<AddProduct />}></Route>
-            <Route path="addproduct" element={<AddProduct />}></Route>
-            <Route path="allOrders" element={<AllOrder />}></Route>
-            <Route path="allUsers" element={<AllUsers />}></Route>
-            <Route path="allreviews" element={<AllReview />}></Route>
-
-
-
+            <Route path='addproduct' element={<AddProduct />}></Route>
+            <Route path='allOrders' element={<AllOrder />}></Route>
+            <Route path='allUsers' element={<AllUsers />}></Route>
+            <Route path='allreviews' element={<AllReview />}></Route>
+            <Route path='allproducts' element={<AllProducts />}></Route>
           </Route>
 
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/register" element={<Register />}></Route>
-
-
-
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/register' element={<Register />}></Route>
         </Routes>
-
       </div>
     </Provider>
   );

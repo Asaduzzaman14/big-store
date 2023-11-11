@@ -1,13 +1,13 @@
 import React from "react";
 
-const AllUsers = () => {
+const AllProducts = () => {
   return (
     <div>
       <h3 className='font-bold text-2xl text-center text-secondary'>
-        All users
+        All Products
       </h3>
     </div>
   );
 };
 
-export default AllUsers;
+export default AllProducts;

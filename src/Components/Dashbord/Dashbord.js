@@ -22,13 +22,16 @@ const Dashboard = () => {
               <Link to='addproduct'>Add Product</Link>
             </li>
             <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allOrders'>All Orders</Link>
+              <Link to='allOrders'>Orders</Link>
             </li>
             <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allUsers'>All Users</Link>
+              <Link to='allUsers'>Users</Link>
             </li>
             <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allreviews'>All Reviews</Link>
+              <Link to='allreviews'>Reviews</Link>
+            </li>
+            <li className='hover:bg-[#1a192cc9]'>
+              <Link to='allproducts'>Products</Link>
             </li>
           </ul>
         </div>
