@@ -14,32 +14,39 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className='rounded-md border w-[180px] flex-row gap-2'>
+    <div className='group rounded-md border w-[180px] flex-row gap-2'>
       <Link to='Product/id'>
-        <figure className='w-[180px] h-[210px] rounded-sm'>
-          <img src={img} alt='Movie' />
-        </figure>
+        <div className='relative'>
+          <figure className='w-[180px] h-[210px] rounded-sm'>
+            <img className='w-full h-full' src={img} alt='Movie' />
+          </figure>
+          {/* icons */}
+          <div className='hidden group-hover:block'>
+            <div className=' flex flex-col absolute top-0 left-0'>
+              <button className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+                <HiOutlineHeart />
+              </button>
 
-        <div className='mt-8'>
+              <button
+                className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
+                onClick={() => handleAddToCart(product)}
+              >
+                <BsCartCheckFill />
+              </button>
+              <button className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+                <BsCartCheckFill />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className='px-2 py-1'>
           <p className='text-lg font-noraml text-gray-800 hover:text-secondary '>
             {name}
           </p>
           <p className='text-textColor font-medium  '>Lem ipsum dolor</p>
 
           <p className='text-textColor font-medium  '>${price}</p>
-          {/* icons */}
-          <div className='flex'>
-            <button
-              className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm'
-              onClick={() => handleAddToCart(product)}
-            >
-              <BsCartCheckFill />
-            </button>
-
-            <span className='text-2xl hover:bg-primary hover:text-white p-1 rounded-sm'>
-              <HiOutlineHeart />
-            </span>
-          </div>
         </div>
       </Link>
     </div>
