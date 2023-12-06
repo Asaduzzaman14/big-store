@@ -1,27 +1,23 @@
-import Home from "./Components/Pages/Home";
-import Navbar from "./Components/Shared/Navbar";
-import { Routes, Route, Link } from "react-router-dom";
-import About from "./Components/Pages/About";
-import Blogs from "./Components/Pages/Blogs";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Login/Register";
-import Cart from "./Components/Pages/Cart";
+import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store";
-import BuyProduct from "./Components/Pages/BuyProduct";
-import Dashbord from "./Components/Dashbord/Dashbord";
-import AddProduct from "./Components/Dashbord/AddProduct";
-import AllOrder from "./Components/Dashbord/AllOrder";
-import AllUsers from "./Components/Dashbord/AllUsers";
-import AllReview from "./Components/Dashbord/AllReview";
-import AllCatagory from "./Components/Pages/AllCatagory";
-import AllProducts from "./Components/Dashbord/AllProducts";
-import AdminPanel from "./Components/Dashbord/AdminPanel";
+import routes from "./routes/router";
 
 function App() {
   return (
-    <Provider store={store}>
-      <div>
+    <div>
+      <Provider store={store}>
+        <RouterProvider router={routes} />
+      </Provider>
+    </div>
+  );
+}
+
+export default App;
+/* 
+localStoragell;
+
+<div>
         <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -46,8 +42,5 @@ function App() {
           <Route path='/register' element={<Register />}></Route>
         </Routes>
       </div>
-    </Provider>
-  );
-}
 
-export default App;
+kk */
