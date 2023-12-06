@@ -52,8 +52,8 @@ const Navbar = () => {
         )}
       </>
       <li>
-        <Link to='/dashborad' className='btn btn-ghost text-xl'>
-          Dashborad
+        <Link to='/dashboard' className='btn btn-ghost text-xl'>
+          dashboard
         </Link>
       </li>{" "}
     </>
