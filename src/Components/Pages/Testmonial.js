@@ -21,13 +21,21 @@ const Testmonial = () => {
 
   return (
     <>
-      <div className='bg-base-100 mt-10 p-5 rounded-md'>
+      <div className='bg-base-100 mt-10 p-5 rounded-md overflow-hidden'>
         <h2 className='font-bold text-xl my-3'>Our Testimonials</h2>
         <hr />
 
         <div className='grid grid-cols-1  lg:grid-cols-3 gap-4'>
           {testmonials.map((test, index) => (
-            <div key={index} className='text-center  '>
+            <div
+              data-aos='fade-up'
+              data-aos-offset='100'
+              data-aos-delay='100'
+              data-aos-easing='ease-in-out'
+              data-aos-duration='1000'
+              key={index}
+              className='text-center  '
+            >
               <img
                 className='w-20 h-20 mx-auto rounded-full m-5'
                 src={test.img}

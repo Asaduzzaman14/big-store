@@ -16,42 +16,77 @@ const Navbar = () => {
 
   const menuItem = (
     <>
-      <li>
+      <li
+        data-aos='fade-up'
+        data-aos-delay='50'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
         <Link className='rounded-lg text-lg hover:text-secondary' to='/'>
           Home
         </Link>
       </li>
-      <li>
+      <li
+        data-aos='fade-up'
+        data-aos-delay='100'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
         <Link className='rounded-lg text-lg hover:text-secondary' to='/about'>
           About
         </Link>
       </li>
-      <li>
+      <li
+        data-aos='fade-up'
+        data-aos-delay='150'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
         <Link className='rounded-lg text-lg hover:text-secondary' to='/blog'>
           Blogs
         </Link>
       </li>
-      <li>
+      <li
+        data-aos='fade-up'
+        data-aos-delay='200'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
         <Link className='rounded-lg text-lg hover:text-secondary' to='/cart'>
           Cart: {items.length}
         </Link>
       </li>
       <>
         {user ? (
-          <>
+          <li
+            data-aos='fade-up'
+            data-aos-delay='200'
+            data-aos-offset='10'
+            data-aos-duration='1000'
+          >
             <li onClick={logout} className=' text-xl hover:text-secondary'>
               Sign out
             </li>
-          </>
+          </li>
         ) : (
-          <li>
+          <li
+            data-aos='fade-up'
+            data-aos-delay='200'
+            data-aos-offset='10'
+            data-aos-duration='1000'
+          >
             <Link className='text-xl hover:text-secondary' to='login '>
               Login
             </Link>
           </li>
         )}
       </>
-      <li>
+      <li
+        data-aos='fade-left'
+        data-aos-delay='200'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
         <Link to='/dashboard' className='btn btn-ghost text-xl'>
           dashboard
         </Link>
@@ -60,7 +95,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className='navbar  z-10 bg-primary shadow-xl '>
+    <div className='navbar  z-10 bg-primary shadow-xl overflow-hidden'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex='0' className='btn btn-ghost lg:hidden text-white'>

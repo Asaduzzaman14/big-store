@@ -3,7 +3,15 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import routes from "./routes/router";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Provider store={store}>
