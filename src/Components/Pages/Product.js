@@ -21,32 +21,38 @@ const Product = ({ product }) => {
             <img className='w-full h-full' src={img} alt='Movie' />
           </figure>
           {/* icons */}
-          <div className='hidden group-hover:block'>
-            <div className=' flex flex-col absolute top-0 left-0'>
-              <button className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+          <div className='hidden group-hover:block duration-500  group-hover:transition group-gover:ease-linear group-hover:delay-1000'>
+            <div className='flex flex-col absolute  top-0 left-0'>
+              <button className='relative  text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
                 <HiOutlineHeart />
               </button>
 
               <button
-                className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
+                className='relative -top-5 group-hover:top-0 group-hover:delay-1000 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
                 onClick={() => handleAddToCart(product)}
               >
                 <BsCartCheckFill />
               </button>
-              <button className='text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+              <button className=' text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
                 <BsCartCheckFill />
               </button>
+
+              <div className='transition duration-700 ease-in-out '>
+                <button className=' text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+                  <BsCartCheckFill />
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className='px-2 py-1'>
-          <p className='text-lg font-noraml text-gray-800 hover:text-secondary '>
+        <div className='px-3 py-2'>
+          <p className='text-lg font-medium text-gray-800  hover:text-secondary '>
             {name}
           </p>
-          <p className='text-textColor font-medium  '>Lem ipsum dolor</p>
+          <p className='text-textColor '>Lem ipsum dolor</p>
 
-          <p className='text-textColor font-medium  '>${price}</p>
+          <p className='text-primary  font-medium  '>${price}</p>
         </div>
       </Link>
     </div>
