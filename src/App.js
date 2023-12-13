@@ -24,8 +24,7 @@ function App() {
 export default App;
 
 /* 
-localStoragell;
-
+ 
 <div>
         <Navbar></Navbar>
         <Routes>

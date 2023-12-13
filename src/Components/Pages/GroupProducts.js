@@ -28,8 +28,8 @@ const GroupProducts = () => {
 
   return (
     <div className='bg-base-100 p-5 rounded-lg'>
-      <h2 className='text-xl my-2'>Electronic Accessoris</h2>
-      <div className='grid grid-cols-2'>
+      <h2 className='text-xl font-medium p-2'>Electronic Accessoris</h2>
+      <div className='grid grid-cols-2 gap-5'>
         {" "}
         {products.map((product) => (
           <GropueProduct product={product} key={product.id}></GropueProduct>
@@ -37,7 +37,7 @@ const GroupProducts = () => {
       </div>
       <Link
         to={"/allcatagory"}
-        className='text-xs hover:text-secondary hover:underline text-right'
+        className='text-xs p-2 hover:text-secondary hover:underline text-right'
       >
         View More{" "}
       </Link>

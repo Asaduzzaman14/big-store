@@ -28,7 +28,7 @@ const Product = ({ product }) => {
               </button>
 
               <button
-                className='relative -top-5 group-hover:top-0 group-hover:delay-1000 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
+                className='relative -top-5 group-hover:top-0 group-hover:delay-100 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
                 onClick={() => handleAddToCart(product)}
               >
                 <BsCartCheckFill />
@@ -37,7 +37,7 @@ const Product = ({ product }) => {
                 <BsCartCheckFill />
               </button>
 
-              <div className='transition duration-700 ease-in-out '>
+              <div className='transition group-hover:delay-1000 delay-1000  duration-700 ease-in-out '>
                 <button className=' text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
                   <BsCartCheckFill />
                 </button>
@@ -47,12 +47,11 @@ const Product = ({ product }) => {
         </div>
 
         <div className='px-3 py-2'>
-          <p className='text-lg font-medium text-gray-800  hover:text-secondary '>
+          <p className='text-xs hover:text-secondary'>Gadget Zone</p>
+          <p className='text-sm font-medium text-gray-800  hover:text-secondary '>
             {name}
           </p>
-          <p className='text-textColor '>Lem ipsum dolor</p>
-
-          <p className='text-primary  font-medium  '>${price}</p>
+          <p className='text-primary text-md font-medium  '>${price}</p>
         </div>
       </Link>
     </div>
