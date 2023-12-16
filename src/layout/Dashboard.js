@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import user from "../Assates/Testimonials-img/person 1.png";
-
+import "./dashboard.module.css";
 const Dashboard = () => {
   return (
     <>
-      <div className='sticky top-0 z-40 bg-gray-900 flex justify-between p-2 lg:p-2 lg:px-5 text-white'>
+      <div className=' sticky top-0 z-40 bg-gray-900 flex justify-between p-2 lg:p-2 lg:px-5 text-white'>
         <span className='py-auto my-auto'>Back</span>
 
         <img className='w-12' src={user} alt='' />
@@ -13,21 +13,9 @@ const Dashboard = () => {
       <div className='flex '>
         <div className='drawer-side min-h-full'>
           <label htmlFor='dashboard-sidebar' className='drawer-overlay'></label>
-          <ul className='overflow-x-scroll bg-primary/95 text-white font-semibold menu overflow-y-auto w-40 h-screen'>
+          <ul className='overflow-y-scroll bg-primary/95 text-white font-semibold menu  w-40 h-screen'>
             <li className='hover:bg-[#1a192cc9]'>
               <Link to='addproduct'>Add Product</Link>
-            </li>
-            <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allOrders'>Orders</Link>
-            </li>
-            <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allUsers'>Users</Link>
-            </li>
-            <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allreviews'>Reviews</Link>
-            </li>
-            <li className='hover:bg-[#1a192cc9]'>
-              <Link to='allproducts'>Products</Link>
             </li>
             <li className='hover:bg-[#1a192cc9]'>
               <Link to='allOrders'>Orders</Link>
