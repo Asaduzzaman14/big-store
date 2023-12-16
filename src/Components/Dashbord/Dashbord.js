@@ -11,8 +11,6 @@ const Dashboard = () => {
           className='drawer-toggle'
         />
         <div className='drawer-content flex flex-col p-5 '>
-          {/*  Page content here  */}
-          {/* <h2 className='text-4xl text-secondary font-semibold py-2'>Welcome to Your  Dashboard</h2> */}
           <Outlet className='overflow-clip'></Outlet>
         </div>
         <div className='drawer-side'>

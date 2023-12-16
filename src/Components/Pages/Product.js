@@ -21,9 +21,9 @@ const Product = ({ product }) => {
             <img className='w-full h-full' src={img} alt='Movie' />
           </figure>
           {/* icons */}
-          <div className='hidden  group-hover:block duration-500  group-hover:transition group-gover:ease-linear group-hover:delay-1000'>
+          {/* <div className='hidden  group-hover:block group-hover:delay-100  duration-500  group-hover:transition group-gover:ease-linear group-hover:delay-1000'>
             <div className='flex flex-col absolute  top-0 left-0'>
-              <button className='relative  text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+              <button className='transition-all group-hover:delay-1000  text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
                 <HiOutlineHeart />
               </button>
 
@@ -36,12 +36,25 @@ const Product = ({ product }) => {
               <button className=' text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
                 <BsCartCheckFill />
               </button>
+            </div>
+          </div> */}
 
-              <div className='transition group-hover:delay-1000 delay-1000  duration-700 ease-in-out '>
-                <button className=' text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
-                  <BsCartCheckFill />
-                </button>
-              </div>
+          <div className='hidden group-hover:block group-hover:delay-1000 duration-500 group-hover:transition group-hover:ease-linear'>
+            <div className='flex flex-col absolute top-0 left-0'>
+              <button className='transition-all group-hover:delay-1000 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+                <HiOutlineHeart />
+              </button>
+
+              <button
+                className='relative -top-5 group-hover:top-0 group-hover:delay-1000 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'
+                onClick={() => handleAddToCart(product)}
+              >
+                <BsCartCheckFill />
+              </button>
+
+              <button className='group-hover:delay-2000 text-3xl hover:bg-primary hover:text-white p-1 rounded-sm'>
+                <BsCartCheckFill />
+              </button>
             </div>
           </div>
         </div>

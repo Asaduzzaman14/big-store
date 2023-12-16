@@ -16,7 +16,7 @@ const Electric = () => {
     },
     {
       id: "3",
-      productimg: "https://i.ibb.co/M5pBMWc/speaker.jpg ",
+      productimg: "https://i.ibb.co/M5pBMWc/speaker.jpg",
       name: "Walton TV",
     },
     {
@@ -36,9 +36,9 @@ const Electric = () => {
       </div>
       <Link
         to={"/allcatagory"}
-        className='text-xs hover:text-secondary hover:underline text-right'
+        className='text-xs px-2 hover:text-secondary hover:underline text-right'
       >
-        View More{" "}
+        View More
       </Link>
     </div>
   );

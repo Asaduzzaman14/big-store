@@ -7,7 +7,7 @@ const GropueProduct = ({ product }) => {
     <div>
       <div className='p-2'>
         <img className='w-48' src={productimg} alt='' />
-        <p className='pt-2 font-medium text-sm'>{name}</p>
+        <p className='pt-2 font-medium'>{name}</p>
         <p>{price}</p>
       </div>
     </div>
