@@ -52,6 +52,10 @@ const routes = createBrowserRouter([
         path: "Product/:id",
         element: <BuyProduct />,
       },
+      {
+        path: "*",
+        element: <Home />,
+      },
     ],
   },
   {
