@@ -6,7 +6,9 @@ const Dashboard = () => {
   return (
     <>
       <div className=' sticky top-0 z-40 bg-gray-900 flex justify-between p-2 lg:p-2 lg:px-5 text-white'>
-        <span className='py-auto my-auto'>Back</span>
+        <Link to={"/"}>
+          <span className='py-auto my-auto'>Back</span>
+        </Link>
 
         <img className='w-12' src={user} alt='' />
       </div>
