@@ -62,17 +62,11 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.4);
 }
-
-.slick-slider {
-  position: absolute;
-}
-.slick-arrow .slick-prev {
-  background: #000;
-  width: 20px !important;
-  height: 20px !important;
-  /* position: absolute; */
+#id {
+  position: relative !important;
 }
 
-.slick-next {
-  font-size: 50px !important;
+#id .slick-arrow {
+  position: absolute !important;
+  top: 0 !important;
 }
