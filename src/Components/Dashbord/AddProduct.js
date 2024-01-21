@@ -7,7 +7,7 @@ const AddProduct = () => {
     <div>
       <div>
         <div className=''>
-          <h3 className='font-bold text-2xl text-center text-secondary'>
+          <h3 className='font-bold text-2xl mt-5 text-center text-secondary'>
             {"Add New Product"}
           </h3>
 
