@@ -13,7 +13,6 @@ const Dashboard = () => {
         </Link>
         <img className='w-8' src={user} alt='' />
       </div>
-      {/*  dashboard sidebar */}
 
       <div className='flex flex-row justify-between'>
         <div className=' fixed  top-15 left-0  drawer-side h-[80%]'>
@@ -78,9 +77,10 @@ const Dashboard = () => {
 
           <div className='min-w-full mt-10'>
             <div className='p-3 bg-gray-500 min-w-full'>
-              <h2 className='text-2xl'>
-                Footer Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident nihil assumenda quisquam molestias commodi a, quam
+              <h2 className='text-xl min-w-full'>
+                Footer Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Maxime, adipisci! consectetur
+                adipisicing elit. Maxime, adipisci!
               </h2>
             </div>
           </div>
