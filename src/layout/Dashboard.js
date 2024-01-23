@@ -3,6 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 import user from "../Assates/Testimonials-img/person 1.png";
 import "./dashboard.module.css";
 import Sidebar from "./Sidebar";
+import DashboardFooter from "../Components/Shared/DashboardFooter";
+import { MdOutlineMenu } from "react-icons/md";
 const Dashboard = () => {
   return (
     <>
@@ -12,26 +14,25 @@ const Dashboard = () => {
             BIG<span className='text-white'>Shop</span>
           </span>
         </Link>
-        <div className='flex place-content-center  gap-2 justify-center'>
+        <div className='flex place-items-center  gap-3 justify-center'>
           <img className='w-8' src={user} alt='' />
-          <span className=''>Icon</span>
+          <span className='cursor-pointer'>
+            <MdOutlineMenu className='text-2xl' />
+          </span>
         </div>
       </div>
 
-      <div className='flex'>
+      <div className=''>
         <Sidebar />
 
-        <div className='ml-40 justify-end bg-gray-300'>
+        <div className='ml-40 justify-end  bg-gray-300'>
           <div className='min-h-screen h-full'>
             <Outlet />
           </div>
 
-          <div className='min-w-fit mt-auto'>
+          <div className='min-w-fit'>
             <div className='p-3 bg-gray-500 min-w-full'>
-              <h2 className='text-xl min-w-full'>
-                Footer Lorem ipsum Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Laborum pariatur nisi sapiente consequuntur
-              </h2>
+              <DashboardFooter />
             </div>
           </div>
         </div>
