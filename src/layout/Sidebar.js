@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className=' fixed  top-15 left-0  drawer-side h-[80%]'>
-      <ul className='overflow-y-scroll bg-primary/95 text-white font-semibold menu  w-40 h-screen'>
+      <ul className='overflow-y-scroll bg-primary text-white font-semibold menu  w-40 h-screen'>
         <li className='hover:bg-[#1a192cc9]'>
           <Link to='addproduct'>Add Product</Link>
         </li>

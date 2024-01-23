@@ -14,6 +14,7 @@ import Blogs from "../Components/Pages/Blogs";
 import Cart from "../Components/Pages/Cart";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Login/Register";
+import AdminPanel from "../Components/Dashbord/AdminPanel";
 
 const routes = createBrowserRouter([
   {
@@ -64,7 +65,7 @@ const routes = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <AllOrder />,
+        element: <AdminPanel />,
       },
       {
         path: "addproduct",
