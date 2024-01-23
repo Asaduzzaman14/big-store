@@ -22,16 +22,15 @@ const Dashboard = () => {
         <Sidebar />
 
         <div className='ml-40 justify-end bg-gray-300'>
-          <Outlet />
+          <div className='min-h-screen h-full'>
+            <Outlet />
+          </div>
 
-          <div className='min-w-fit mt-10'>
+          <div className='min-w-fit mt-auto'>
             <div className='p-3 bg-gray-500 min-w-full'>
               <h2 className='text-xl min-w-full'>
                 Footer Lorem ipsum Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Laborum pariatur nisi sapiente consequuntur
-                adipisci voluptatum laudantium, exercitationem possimus qui
-                minima, cum obcaecati cumque rem quam necessitatibus reiciendis
-                omnis voluptates! Quaerat.
               </h2>
             </div>
           </div>
