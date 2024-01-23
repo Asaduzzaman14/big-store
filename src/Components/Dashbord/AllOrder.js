@@ -1,11 +1,12 @@
 import React from "react";
+import Title from "../UI/Title";
 
 const AllOrder = () => {
   return (
-    <div className='px-2 min-h-screen'>
-      <h3 className='font-bold text-2xl pt-5 text-center text-black'>
-        All Orders
-      </h3>
+    <div>
+      <Title>
+        <h3>All orders</h3>
+      </Title>
     </div>
   );
 };
