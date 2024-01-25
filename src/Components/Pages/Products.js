@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const CustomPrevArrow = ({ onClick }) => (
   <button
     type='button'
-    className='slick-prev -mb-7 -top-3 left-[85%] md:left-[85%]  lg:left-[90%] mr-8 w-6 h-6 bg-gray-400 hover:bg-black text-black flex justify-center place-items-center '
+    className='slick-prev -mb-7 -top-24 lg:-top-11 left-[calc(100%-80px)]  w-9 h-9 rounded-sm  bg-gray-400 hover:bg-black  focus:bg-black flex  place-items-center justify-center '
     onClick={onClick}
   >
     Previous
@@ -17,7 +17,7 @@ const CustomPrevArrow = ({ onClick }) => (
 const SampleNextArrow = ({ onClick }) => (
   <button
     type='button'
-    className='slick-next -top-3 right-0 w-6 h-6 bg-gray-400 hover:bg-black text-black flex justify-center place-items-center '
+    className='slick-next -top-24 lg:-top-11 right-0 rounded-sm  w-9 h-9 bg-gray-400 hover:bg-black text-black flex justify-center place-items-center focus:bg-black  '
     onClick={onClick}
   >
     Previous
@@ -76,10 +76,10 @@ const Products = () => {
         <h2 className='font-semibold text-left text-lg'>Trending Products</h2>
         <hr className='my-3 text-red-600' />
 
-        <ul className='justify-end  font-semibold  flex gap-3 mt-3 mb-8 text-gray-700'>
-          <li>Fashion</li>
-          <li>Cosmatic</li>
-          <li>Electronic</li>
+        <ul className='justify-end  font-semibold lg:mr-28  flex gap-3 mt-4 mb-8 text-gray-700'>
+          <li className='cursor-pointer'>Fashion</li>
+          <li className='cursor-pointer'>Cosmatic</li>
+          <li className='cursor-pointer'>Electronic</li>
         </ul>
       </div>
       {/* <div className=' grid md:grid-cols-3 lg:grid-cols-5 gap-5 mx-auto'> */}
