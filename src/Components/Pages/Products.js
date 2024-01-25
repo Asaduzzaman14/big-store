@@ -26,6 +26,7 @@ const SampleNextArrow = ({ onClick }) => (
 
 const Products = () => {
   const dispatch = useDispatch();
+  const [active, setActive] = useState("1");
   const { data, status } = useSelector((state) => state.products);
 
   useEffect(() => {
@@ -76,10 +77,25 @@ const Products = () => {
         <h2 className='font-semibold text-left text-lg'>Trending Products</h2>
         <hr className='my-3 text-red-600' />
 
-        <ul className='justify-end  font-semibold lg:mr-28  flex gap-3 mt-4 mb-8 text-gray-700'>
-          <li className='cursor-pointer'>Fashion</li>
-          <li className='cursor-pointer'>Cosmatic</li>
-          <li className='cursor-pointer'>Electronic</li>
+        <ul className='justify-end  font-medium lg:mr-28  flex gap-3 mt-4 mb-8 text-gray-700'>
+          <li
+            onClick={() => setActive(1)}
+            className={`cursor-pointer  ${active == 1 && "text-[#747171]"}`}
+          >
+            Fashion
+          </li>
+          <li
+            onClick={() => setActive(2)}
+            className={`cursor-pointer  ${active == 2 && "text-[#747171]"}`}
+          >
+            Cosmatic
+          </li>
+          <li
+            onClick={() => setActive(3)}
+            className={`cursor-pointer  ${active == 3 && "text-[#747171]"}`}
+          >
+            Electronic
+          </li>
         </ul>
       </div>
       {/* <div className=' grid md:grid-cols-3 lg:grid-cols-5 gap-5 mx-auto'> */}
