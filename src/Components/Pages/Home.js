@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Catagoris from "./Catagoris";
 import Products from "./Products";
 import Testmonial from "./Testmonial";
+import LatestBlog from "../UI/LatestBlog";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Catagoris></Catagoris>
         <Products></Products>
         <Testmonial></Testmonial>
+        <LatestBlog />
       </div>
       <Footer></Footer>
     </div>
