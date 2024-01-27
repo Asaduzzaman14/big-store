@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className=' bg-accent'>
       <Banner></Banner>
-      <div className='px-10 mx-auto'>
+      <div className='px-5 lg:px-10 mx-auto'>
         <Catagoris></Catagoris>
         <Products></Products>
         <Testmonial></Testmonial>
