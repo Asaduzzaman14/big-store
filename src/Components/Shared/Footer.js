@@ -11,9 +11,9 @@ const Footer = () => {
             from
           </p>
           <input
-            className='mt-5 w-72 p-2 bg-primary-focus outline-none text-gray-300'
+            className='mt-5  w-60 lg:w-72 p-2 bg-primary-focus outline-none text-gray-300'
             type='email'
-            placeholder='Yout email address'
+            placeholder='Your email address'
           />
         </div>
 

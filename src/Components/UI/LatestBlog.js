@@ -6,7 +6,7 @@ import Slider from "react-slick";
 const CustomPrevArrow = ({ onClick }) => (
   <button
     type='button'
-    className='slick-prev -mb-7 -top-7 lg:-top-11 left-[calc(100%-80px)]  w-9 h-9 rounded-sm  bg-gray-400 hover:bg-black  focus:bg-black flex  place-items-center justify-center '
+    className='slick-prev -mb-7 -top-7 lg:-top-11 left-[calc(100%-80px)]  w-9 h-9 rounded-sm  bg-gray-400 hover:bg-black  focus:bg-black opacity-100 flex  place-items-center justify-center '
     onClick={onClick}
   >
     Previous
