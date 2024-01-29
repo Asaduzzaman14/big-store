@@ -15,6 +15,7 @@ import Cart from "../Components/Pages/Cart";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Login/Register";
 import AdminPanel from "../Components/Dashbord/AdminPanel";
+import Contuct from "../Components/Pages/Contuct";
 
 const routes = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const routes = createBrowserRouter([
       {
         path: "blog",
         element: <Blogs />,
+      },
+      {
+        path: "contuct",
+        element: <Contuct />,
       },
       {
         path: "cart",

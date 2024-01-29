@@ -48,6 +48,16 @@ const Navbar = () => {
       </li>
       <li
         data-aos='fade-up'
+        data-aos-delay='150'
+        data-aos-offset='10'
+        data-aos-duration='1000'
+      >
+        <Link className='rounded-lg text-lg hover:text-secondary' to='/contuct'>
+          Contuct
+        </Link>
+      </li>
+      <li
+        data-aos='fade-up'
         data-aos-delay='200'
         data-aos-offset='10'
         data-aos-duration='1000'
