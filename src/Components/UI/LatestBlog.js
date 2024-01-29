@@ -25,7 +25,7 @@ const SampleNextArrow = ({ onClick }) => (
 
 const LatestBlog = () => {
   const settings = {
-    className: "",
+    className: "border-0",
     dots: false,
     infinite: true,
     speed: 500,
@@ -59,33 +59,33 @@ const LatestBlog = () => {
       <hr />
 
       <Slider {...settings}>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary pt-3 mt-5'>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary pt-3 mt-5'>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary pt-3 mt-5'>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary pt-3 mt-5'>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary pt-3 mt-5'>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
-        <div className='w-72'>
-          <img className='w-72 h-80 mb-4 rounded-md' src={image} alt='img' />
+        <div className='w-64'>
+          <img className='w-64 h-80 mb-4 rounded-md' src={image} alt='img' />
           <span className='text-secondary  '>10 december 2024</span>
           <p>{text.slice(0, 60)}</p>
         </div>
